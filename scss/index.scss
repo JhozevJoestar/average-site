@@ -1,0 +1,461 @@
+// Обнуление
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+}
+img {
+  vertical-align: top;
+}
+
+// Переменные
+
+$perc100: 100%;
+$hrborder: 1px solid #8b8371;
+$WatchhrWidth: 30px;
+$black: #000000;
+$white: #ffffff;
+
+// Начало кода
+.wrapper {
+  min-height: $perc100;
+  overflow: hidden;
+}
+
+header {
+  width: $perc100;
+  height: 87px;
+  display: flex;
+}
+
+.header_logo_container {
+  width: 103.68px;
+  height: 26px;
+  margin: 31px 0px 0px 97px;
+  display: flex;
+  align-items: center;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #555248;
+}
+
+.header_links_menu {
+  width: 422px;
+  height: 13px;
+  margin: 35px 0px 0px 266px;
+  display: flex;
+  justify-content: space-between;
+  .header_link {
+    width: auto;
+    height: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555248;
+  }
+}
+
+.header_images {
+  width: 99px;
+  height: 21px;
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0px 0px 278px;
+  img {
+    width: 17px;
+    height: 16px;
+  }
+}
+
+.main_container {
+  width: $perc100;
+  height: 768px;
+  .main_hr {
+    width: 50px;
+    position: absolute;
+    border: $hrborder;
+    margin: 272px 0px 0px 120px;
+  }
+  .main_image_price {
+    width: 150px;
+    display: flex;
+    position: absolute;
+    margin: 138px 0px 0px 583px;
+    .main_image_number {
+      font-family: "Prata";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: $black;
+    }
+    img {
+      width: 9.6px;
+      height: 13px;
+      margin-left: 7px;
+      margin-top: 3px;
+    }
+    hr {
+      width: 50px;
+      height: 0px;
+      margin: 8px 0px 0px 15px;
+      border: $hrborder;
+    }
+  }
+  .main_info_container {
+    position: absolute;
+    width: 343px;
+    height: 296px;
+    margin: 236px 0px 0px 185px;
+    .main_info_title {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      color: $black;
+    }
+    .main_info_collect {
+      margin-top: 16px;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      color: $black;
+    }
+    .main_info_description {
+      width: 258px;
+      margin-top: 39px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      color: $black;
+    }
+    button {
+      width: 205px;
+      height: 64px;
+      margin-top: 64px;
+      background: #444240;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
+  .ellipse_img {
+    position: absolute;
+    margin-left: 469px;
+  }
+  .watch_main_img {
+    position: absolute;
+    margin-left: 662px;
+    margin-top: -10px;
+  }
+  .main_img_diameter {
+    position: absolute;
+    width: 187px;
+    display: flex;
+    align-items: center;
+    margin: 636px 0px 0px 1130px;
+    font-family: "Prata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: $black;
+    hr {
+      width: 50px;
+      height: 0px;
+      margin-right: 15px;
+      border: $hrborder;
+    }
+  }
+}
+
+.products_container {
+  width: $perc100;
+  height: 720px;
+  .products_title {
+    width: 306px;
+    padding-top: 79px;
+    margin: 0px auto;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: $black;
+  }
+  .products_show_all {
+    position: absolute;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: $black;
+    margin-left: 1164px;
+    hr {
+      width: 104px;
+      border: $hrborder;
+      margin-top: 8.5px;
+    }
+  }
+  .products_watchs_container {
+    width: 1178px;
+    height: 467px;
+    margin: 0px auto;
+    padding-top: 92px;
+    display: flex;
+    .products_watchs_card {
+      width: 370px;
+      height: 467px;
+    }
+    span {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: $black;
+    }
+    .products_watchs_price {
+      width: 100px;
+      display: flex;
+      align-items: center;
+      font-family: "Prata";
+      font-style: normal;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $black;
+      img {
+        width: 7.38px;
+        height: 10px;
+        margin: -2px 0px 0px 4.24px;
+      }
+    }
+    .products_watchs_details {
+      width: 140px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 19px;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: $black;
+      hr {
+        width: $WatchhrWidth;
+        height: 0px;
+        border: $hrborder;
+      }
+    }
+  }
+}
+
+.banner_container {
+  width: $perc100;
+  height: 519px;
+  display: flex;
+  .gray_div {
+    width: 468px;
+    height: 519px;
+    background-color: #f7f5ef;
+  }
+  img {
+    position: absolute;
+    width: 521px;
+    height: 414px;
+    margin: 52px 0px 0px 177px;
+  }
+  .banner_arrow {
+    position: absolute;
+    width: 63px;
+    margin: 488px 0px 0px 552px;
+    font-family: "Prata";
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(27, 26, 23, 0.82);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      position: relative;
+      width: 5px;
+      height: 10px;
+      margin: 0px;
+    }
+  }
+  .banner_info {
+    width: 376px;
+    height: 243px;
+    margin: 140px 0px 0px 299px;
+    .banner_title {
+      font-family: "Playfair Display";
+      font-weight: 400;
+      font-size: 32px;
+      color: #1b1a17;
+    }
+    .banner_description {
+      width: 376px;
+      margin-top: 38px;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #444240;
+    }
+    button {
+      width: 205px;
+      height: 64px;
+      margin-top: 45px;
+      background: #d4b098;
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      color: $white;
+    }
+  }
+  .banner_overflow {
+    width: 100px;
+
+    .ellipse_banner {
+      position: relative;
+      width: 365px;
+      height: 365px;
+      margin: 0px 0px 0px 7px;
+    }
+    .ellipse_banner2 {
+      position: relative;
+      width: 744px;
+      height: 744px;
+      margin: -590px 0px 0px 2px;
+    }
+  }
+}
+
+.news_container {
+  width: $perc100;
+  height: 631px;
+  display: flex;
+  .news_container_text {
+    width: 471px;
+    height: 256px;
+    margin: 221px 0px 0px 97px;
+    .news_text_title {
+      font-family: "Playfair Display";
+      font-weight: 400;
+      font-size: 32px;
+      color: $black;
+    }
+    .news_text_description {
+      width: 376px;
+      margin-top: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      color: #444240;
+    }
+    .news_text_images {
+      width: 90px;
+      height: 23px;
+      margin-top: 119px;
+      display: flex;
+      justify-content: space-between;
+      img:last-child {
+        width: 22px;
+        height: 17px;
+        display: inline-block;
+        align-self: flex-end;
+      }
+    }
+  }
+  .news_container_3photo {
+    width: 629px;
+    height: 460px;
+    display: flex;
+    margin: 81px 0px 0px 71px;
+    .news_container_2photo {
+      width: 242px;
+      height: 460px;
+      justify-content: space-between;
+      flex-direction: column;
+      img:last-child {
+        margin-top: 10px;
+      }
+    }
+    .news_container_1photo {
+      width: 377px;
+      height: 460px;
+      margin-left: 10px;
+    }
+  }
+}
+
+footer {
+  width: $perc100;
+  height: 275px;
+  background-color: #444240;
+  display: flex;
+  justify-content: center;
+  .footer_container {
+    width: 998px;
+    height: 129px;
+    margin-top: 79px;
+    display: flex;
+    justify-content: space-between;
+    .footer_card {
+      .footer_card_title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.07em;
+        color: $white;
+      }
+      .footer_conquest {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.14em;
+        color: $white;
+        img {
+          margin-top: -10px;
+        }
+      }
+      ul {
+        margin-top: 33px;
+        li {
+          font-weight: 400;
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0.75);
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
